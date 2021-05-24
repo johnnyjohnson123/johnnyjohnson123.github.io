@@ -1,5 +1,25 @@
 <!DOCTYPE HTML>
 <html>
+	<style>
+	.dot {
+      box-sizing: border-box;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 0.125rem solid;
+      display: inline-block;
+      opacity: 0.6;
+	}
+
+	.dot--empty { background-color: transparent; }
+	.dot--full { background-color: currentColor; }
+	.dot--fill-left { 
+		border-left-width: 13px; 
+		opacity: 0.6;
+	}
+
+	.gray { color: #cccccc; }
+	</style>
 	<head>
 		<title>Abhay Bisht</title>
 		<meta charset="utf-8" />
@@ -54,23 +74,30 @@
 
 				<!-- Wrapper -->
 					<section id="wrapper">
-<!-- About Me
-							<section id="one" class="wrapper spotlight style1">
+
+							<section id="one" class="wrapper alt spotlight style2">
 								<div class="inner">
 									<div class="content">
 										<style>
 											h2 {text-align: center;}
 										</style>
-										<h2 class="major"><font size="5">A Little Bit About Me</font></h2>
-										<p></p>
+										<h2 class="major"><font size="6">A Little Bit About Me</font></h2>
+										<p> I am a rising sophomore at Northeastern University studying Computer Science with a minor in Business Administration. Given the rapid pace at which technology advances and becomes a larger part of our everyday lives, I've always been interested in Software Engineering as a means of positively impacting people's day to day activities.</p>
+										<!--
+										<div class="dot  gray  dot--full"></div>
+										<div class="dot  gray  dot--full"></div>
+										<div class="dot  gray  dot--fill-left"></div>
+										<div class="dot  gray  dot--empty"></div>
+										<div class="dot  gray  dot--empty"></div>
+										-->
 									</div>
 								</div>
 							</section>
--->
 
 							<!-- Use this section to describe work experience. If using this, change class for section id four to "wrapper" -->
-<!-- Work Experience
-							<section id="two" class="wrapper alt spotlight style2">
+<!--
+							<section id="one" class="wrapper alt spotlight style3">
+								
 								<div class="inner">
 									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 									<div class="content">
@@ -79,13 +106,13 @@
 										<a href="#" class="special">Learn more</a>
 									</div>
 								</div>
+							
 							</section>
 -->
-
-<!-- Random
-							<section id="three" class="wrapper spotlight style3">
+<!--
+							<section id="three" class="wrapper spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Nullam dignissim</h2>
 										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
