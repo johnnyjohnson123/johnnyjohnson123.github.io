@@ -1,25 +1,5 @@
 <!DOCTYPE HTML>
 <html>
-	<style>
-	.dot {
-      box-sizing: border-box;
-      width: 26px;
-      height: 26px;
-      border-radius: 50%;
-      border: 0.125rem solid;
-      display: inline-block;
-      opacity: 0.6;
-	}
-
-	.dot--empty { background-color: transparent; }
-	.dot--full { background-color: currentColor; }
-	.dot--fill-left { 
-		border-left-width: 13px; 
-		opacity: 0.6;
-	}
-
-	.gray { color: #cccccc; }
-	</style>
 	<head>
 		<title>Abhay Bisht</title>
 		<meta charset="utf-8" />
@@ -33,269 +13,194 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
 		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+		<div id="page-wrapper">
+			<!-- Header -->
+			<header id="header" class="alt">
+				<h1><a href="index.html">Abhay Bisht</a></h1>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+			<!-- Menu -->
+			<nav id="menu">
+				<div class="inner">
+					<h2>Menu</h2>
+					<ul class="links">
+						<li><a href="photoprocessor.html">Photoprocessor</a></li>
+						<li><a href="freecell.html">FreeCell</a></li>
+						<li><a href="countdown.html">Countdown</a></li>
+					</ul>
+					<a href="#" class="close">Close</a>
+				</div>
+			</nav>
+			<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<style>
+						img {
+							border-radius: 50%;
+							display: block;
+							margin-left: auto;
+							margin-right: auto;
+						}
+						p {text-align: center;}
+					</style>
+					<div class="logo"><img src="college.jpg" alt="Picture of Me" width="200" height="200"></span></div>
+					<h2 style="text-align: center;">Hi, I'm Abhay</h2>
+					<p> I am a junior at Northeastern University studying computer science </p>
+				</div>
+			</section>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Abhay Bisht</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<!-- <li><a href="freetime.html">FreeTimeCalendar</a></li> -->
-								<li><a href="photoprocessor.html">Photoprocessor</a></li>
-								<li><a href="freecell.html">FreeCell</a></li>
-								<li><a href="countdown.html">Countdown</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
-
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
+			<!-- Wrapper -->
+			<!-- Regular wrapper angles down to left, alt angles down to right -->
+			<!-- Use article style="position: relative; margin:auto;" on last article if 
+				   odd number of projects. If even number, simply use article-->
+			<section id="wrapper">
+				<section id="one" class="wrapper alt spotlight style2">
+					<div class="inner">
+						<div class="content">
 							<style>
-							img {
-								border-radius: 50%;
-								display: block;
-  							margin-left: auto;
-  							margin-right: auto;
-							}
-							p {text-align: center;}
+								h2, h1, a {text-align: center;}
 							</style>
-							<div class="logo"><img src="college.jpg" alt="Picture of Me" width="200" height="200"></span></div>
-							<h2 style="text-align: center;">Hi, I'm Abhay</h2>
-							<p>I am a junior at Northeastern University studying computer science
-								<!-- <br />with a minor in business administration.</a> -->
-							</p>
+							<h2 class="major"><font size="6">A Little Bit About Me</font></h2>
+							<p> I am a junior at Northeastern University studying Computer Science with a minor in Business Administration. Given the rapid pace at which technology advances and becomes a larger part of our everyday lives, I've always been interested in Software Engineering as a means of positively impacting people's day to day activities.</p>
+							<a href="abhay_bisht_resume.pdf" target="_blank" class="special">Resume</a>
+							<!-- Proficiency bubbles for different skills -->
+							<!-- <div id="proficiency-bubbles">
+								<div class="dot  gray  dot--full"></div>
+								<div class="dot  gray  dot--full"></div>
+								<div class="dot  gray  dot--fill-left"></div>
+								<div class="dot  gray  dot--empty"></div>
+								<div class="dot  gray  dot--empty"></div>
+							</div> -->
 						</div>
-					</section>
-
-				<!-- Wrapper -->
-					<section id="wrapper">
-
-							<section id="one" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<div class="content">
-										<style>
-											h2, h1, a {text-align: center;}
-										</style>
-										<h2 class="major"><font size="6">A Little Bit About Me</font></h2>
-										<p> I am a junior at Northeastern University studying Computer Science with a minor in Business Administration. Given the rapid pace at which technology advances and becomes a larger part of our everyday lives, I've always been interested in Software Engineering as a means of positively impacting people's day to day activities.</p>
-										<a href="abhay_bisht_resume.pdf" target="_blank" class="special">Resume</a>
-										<!--
-										<div class="dot  gray  dot--full"></div>
-										<div class="dot  gray  dot--full"></div>
-										<div class="dot  gray  dot--fill-left"></div>
-										<div class="dot  gray  dot--empty"></div>
-										<div class="dot  gray  dot--empty"></div>
-										-->
-									</div>
-								</div>
+					</div>
+				</section>
+				<!-- Use this section to describe work experience. 
+						 If using this, change class for section id four to "wrapper" -->
+				<section id="one" class="wrapper spotlight style4">
+					<div class="inner harry">
+						<div class="content">
+							<h2 class="major"><font size="6">Work Experience</font></h2>
+							<section class="features">
+								<!-- Empty Box for Smartleaf Co-op Experience -->
+								<!-- <article style="position: relative; margin:auto;">
+									<h3 class="major">
+										<a 
+											class="url" 
+											href="https://www.smartleaf.com/"
+											target="_blank"
+										>Smartleaf</a>
+										Software Development Co&#8209;op
+									</h3>
+									<p class="work-date">January - June 2023</p>
+									<ul style="text-align:left;">
+									</ul> 
+								</article> -->
+								<article style="position: relative; margin:auto;">
+									<h3 class="major">
+										<a 
+											class="url" 
+											href="https://www.optum.com/"
+											target="_blank"
+										>Optum</a>
+										Software Engineering Co&#8209;op
+									</h3>
+									<p class="work-date">January - June 2022</p>
+									<ul style="text-align:left;">
+										<li>Utilized Terraform to build and deploy critical infrastructure in both AWS and Azure</li>
+										<li>Helped develop an MSK cluster within AWS and used AWS Sandbox for testing</li>
+										<li>Created essential networking resources in Azure (Virtual Network, Subnet, Load Balancer) alongside security protocols (Bastion, Firewall, etc.)</li>
+										<li>Assisted in designing and developing a microsite for centralized documentation using TypeScript and Docusaurus, and used Yarn and NPM for necessary packages</li>
+										<li>Utilized Jenkins to create pipeline templates for various project types and went through the process of manually configuring required plugins</li>
+										<li>Primarily manipulated code using GitHub and worked with advanced features such as Webhooks</li>
+										<li>Actively configuring a HashiCorp Vault instance with Jenkins and configuring it with a microservice</li>
+										<li>Experience with Agile workflow and pair programming with lead engineers</li>
+									</ul> 
+								</article>
 							</section>
-
-							<!-- Use this section to describe work experience. If using this, change class for section id four to "wrapper" -->
-
-							<section id="one" class="wrapper spotlight style4">
-								
-								<div class="inner harry">
-									<div class="content">
-										<h2 class="major"><font size="6">Work Experience</font></h2>
-										<section class="features">
-                      <!-- <article style="position: relative; margin:auto;">
-												<h3 class="major">
-													<a 
-                            class="url" 
-                            href="https://www.smartleaf.com/"
-                            target="_blank"
-                          > Smartleaf</a>
-													Software Development Co&#8209;op
-												</h3>
-												<p class="work-date">January - June 2023</p>
-												<ul style="text-align:left;">
-													
-												</ul> 
-											</article> -->
-											<article style="position: relative; margin:auto;">
-												<h3 class="major">
-													<a 
-                            class="url" 
-                            href="https://www.optum.com/"
-                            target="_blank"
-                          > Optum</a>
-													Software Engineering Co&#8209;op
-												</h3>
-												<p class="work-date">January - June 2022</p>
-												<ul style="text-align:left;">
-													<li>Utilized Terraform to build and deploy critical infrastructure in both AWS and Azure</li>
-													<li>Helped develop an MSK cluster within AWS and used AWS Sandbox for testing</li>
-													<li>Created essential networking resources in Azure (Virtual Network, Subnet, Load Balancer) alongside security protocols (Bastion, Firewall, etc.)</li>
-													<li>Assisted in designing and developing a microsite for centralized documentation using TypeScript and Docusaurus, and used Yarn and NPM for necessary packages</li>
-													<li>Utilized Jenkins to create pipeline templates for various project types and went through the process of manually configuring required plugins</li>
-													<li>Primarily manipulated code using GitHub and worked with advanced features such as Webhooks</li>
-													<li>Actively configuring a HashiCorp Vault instance with Jenkins and configuring it with a microservice</li>
-													<li>Experience with Agile workflow and pair programming with lead engineers</li>
-												</ul> 
-											</article>
-										</section>
-									</div>
-								</div>
-							
-							</section>
-
-<!--
-							<section id="three" class="wrapper spotlight style2">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Nullam dignissim</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
--->
-
-						<!-- wrapper alt style1 angles down to right, wrapper angles down to left -->
-<!-- Side Projects Heading -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner harry" style="text-align: center;">
-									<h2 class="major"><font size="6">Projects</font></h2>
-									<section class="features">
-
-										<!--Use article style="position: relative; margin:auto; on last article if odd number of projects. If even number, simply use article-->
-<!-- First Side Project -->
-										<article>
-											<a href="#" class="image"><img src="imageprocessor.jpg" alt="" /></a>
-											<h3 class="major">Photo Processor</h3>
-											<p>A basic photo processing application that allows the user to apply various filters and effects as well as downscale images.</p>
-											<a href="photoprocessor.html" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="freecell.jpg" alt="" /></a>
-											<h3 class="major">FreeCell</h3>
-											<p>A simple game of FreeCell with a randomized deck of cards and the ability to move several cards between cascade piles.</p>
-											<a href="freecell.html" class="special">Learn more</a>
-										</article>
-										<article style="position: relative; margin:auto;">
-											<a href="countdown.html" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<style>
-												h3 {text-align: center;}
-											</style>
-											<h3 class="major">Countdown</h3>
-											<p> A simple countdown program that tells you the number of days, hours, and minutes until a certain date. It also allows you to assign a time and name to the event.</p>
-											<a href="countdown.html" class="special">Learn more</a>
-										</article>
-									</section>
-<!-- Additional Projects
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Fusce consequat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-									</section>
-									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
-									</ul>
--->
-								</div>
-							</section>
-
-							<!--Use this section to add any information after portfolio -->
-<!-- Random
-					<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-									<div class="content">
-										<style>
-											h2 {text-align: center;}
-										</style>
-										<h2 class="major"><font size="5">A Little Bit About Me</font></h2>
-										<p></p>
-									 	<a href="#" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
--->
-
-<!-- Footer -->
-						<div class="inner">
-							<h2 style="text-align: center;"><font size="5">Contact Me</font></h2>
+						</div>
+					</div>
+				</section>
+				<!-- <section id="three" class="wrapper spotlight style2">
+					<div class="inner">
+						<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+						<div class="content">
+							<h2 class="major">Nullam dignissim</h2>
+							<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
+							<a href="#" class="special">Learn more</a>
+						</div>
+					</div>
+				</section>  -->
+				<!-- Side Projects Heading -->
+				<section id="four" class="wrapper alt style1">
+					<div class="inner harry" style="text-align: center;">
+						<h2 class="major"><font size="6">Projects</font></h2>
+						<section class="features">
+							<article>
+								<a href="#" class="image"><img src="imageprocessor.jpg" alt="" /></a>
+								<h3 class="major">Photo Processor</h3>
+								<p>A basic photo processing application that allows the user to apply various filters and effects as well as downscale images.</p>
+								<a href="photoprocessor.html" class="special">Learn more</a>
+							</article>
+							<article>
+								<a href="#" class="image"><img src="freecell.jpg" alt="" /></a>
+								<h3 class="major">FreeCell</h3>
+								<p>A simple game of FreeCell with a randomized deck of cards and the ability to move several cards between cascade piles.</p>
+								<a href="freecell.html" class="special">Learn more</a>
+							</article>
+							<article style="position: relative; margin:auto;">
+								<a href="countdown.html" class="image"><img src="images/pic04.jpg" alt="" /></a>
+								<style>
+									h3 {text-align: center;}
+								</style>
+								<h3 class="major">Countdown</h3>
+								<p> A simple countdown program that tells you the number of days, hours, and minutes until a certain date. It also allows you to assign a time and name to the event.</p>
+								<a href="countdown.html" class="special">Learn more</a>
+							</article>
+						</section>
+					</div>
+				</section>
+				<!-- Use this section to add any information after portfolio -->
+				<!-- <section id="three" class="wrapper spotlight style3">
+					<div class="inner">
+						<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+						<div class="content">
 							<style>
-								ul {
-									text-align: center;
-								}
+								h2 {text-align: center;}
 							</style>
-							<ul class="icons">
-							<font size="6">
-								<li><a href="https://www.linkedin.com/in/abhaybisht/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:bishts.abhay@gmail.com" class="icon solid fa-envelope"><span class="label">Mail</span></a></li>
-								<li><a href="https://github.com/AbhayBishts" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								-->
-							</font>
-							</ul>
-							<!--
-							<ul class="copyright">
-								<p>&copy; Abhay Bisht. All rights reserved.</p>
-							</ul>
-							-->
+							<h2 class="major"><font size="5">A Little Bit About Me</font></h2>
+							<p></p>
+							<a href="#" class="special">Learn more</a>
 						</div>
-					</section>
+					</div>
+				</section> -->
+			</section>
 
-
-				<!-- Footer -->
-<!-- Real Footer (only if bib or side project exists) -->
-<!--
-					<section id="footer">
-						<div class="inner">
-							<h2 style="text-align: center;"><font size="6">Contact Me</font></h2>
-							<style>
-								ul {
-									text-align: center;
-								}
-							</style>
-							<ul class="icons">
-							<font size="5">
-								<li><a href="mailto:bishts.abhay@gmail.com" class="icon solid fa-envelope"><span class="label">Mail</span></a></li>
-								
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								
-							</font>
-							</ul>
-							
-							<ul class="copyright">
-								<li>&copy; Abhay Bisht. All rights reserved.</li>
-							</ul>
-							
-						</div>
-					</section>
-				-->
-
+			<!-- Footer -->
+			<div class="inner">
+				<h2 style="text-align: center;"><font size="5">Contact Me</font></h2>
+				<style>
+					ul { text-align: center; }
+				</style>
+				<ul class="icons">
+					<font size="6">
+						<li><a href="https://www.linkedin.com/in/abhaybisht/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:bishts.abhay@gmail.com" class="icon solid fa-envelope"><span class="label">Mail</span></a></li>
+						<li><a href="https://github.com/AbhayBishts" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</font>
+				</ul>
 			</div>
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

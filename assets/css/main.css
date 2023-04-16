@@ -4166,3 +4166,22 @@ input, select, textarea {
     font-weight:lighter; 
     margin: 0 0 1em 0;
   }
+
+	.dot {
+		box-sizing: border-box;
+		width: 26px;
+		height: 26px;
+		border-radius: 50%;
+		border: 0.125rem solid;
+		display: inline-block;
+		opacity: 0.6;
+	}
+
+	.dot--empty { background-color: transparent; }
+	.dot--full { background-color: currentColor; }
+	.dot--fill-left { 
+		border-left-width: 13px; 
+		opacity: 0.6;
+	}
+
+	.gray { color: #cccccc; }
