@@ -179,9 +179,9 @@ main {
 
 .brand {
   font-family: var(--font-mono);
-  font-size: 0.95rem;
-  font-weight: 500;
-  letter-spacing: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   border: none;
   color: var(--fg);
   padding: 0.25rem 0.5rem;
@@ -226,12 +226,20 @@ main {
 }
 
 .avatar {
-  width: 72px;
-  height: 72px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1.75rem;
+  margin-bottom: 2rem;
   border: 1px solid var(--border);
+}
+
+@media (max-width: 640px) {
+  .avatar {
+    width: 112px;
+    height: 112px;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .hero h1 {
