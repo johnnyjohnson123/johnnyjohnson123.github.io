@@ -1,205 +1,104 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Abhay Bisht</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Photo Processor — Abhay Bisht</title>
+    <meta name="description" content="A layered photo-editing application with filters, effects, and downscaling — written in Java." />
+    <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="brand">abhay<span class="dot">.</span></a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html#about" class="nav-hide-sm">About</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#contact" class="nav-hide-sm">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Abhay Bisht</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+    <main id="main">
+      <section class="project-header container">
+        <a href="index.html#projects" class="back-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="19" y1="12" x2="5" y2="12" />
+            <polyline points="12 19 5 12 12 5" />
+          </svg>
+          All projects
+        </a>
+        <h1>Photo Processor</h1>
+        <p class="lede">
+          A basic photo-processing application that lets you apply filters and
+          effects, layer images, and downscale — inspired by popular photo
+          editors, rebuilt from scratch in Java with a Swing GUI.
+        </p>
+        <div class="project-meta">
+          <span>Java</span>
+          <span>Swing</span>
+          <span>MVC</span>
+        </div>
+      </section>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="coveytown.html">TricKey Typing</a></li>
-								<!-- <li><a href="freetime.html">FreeTimeCalendar</a></li> -->
-								<li><a href="freecell.html">FreeCell</a></li>
-								<li><a href="countdown.html">Countdown</a></li>
-								<!-- <li><a href="generic.html">Project 1</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li> -->
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+      <article class="container prose">
+        <h2>Features</h2>
+        <p>
+          My partner and I drew inspiration from popular photo-processing
+          applications and built a working editor with a graphical UI. A few
+          things we paid close attention to:
+        </p>
+        <ul>
+          <li>Upload support for PPM, JPEG, PNG, and other common image types</li>
+          <li>Filters, effects, and image downscaling</li>
+          <li>Layered images and effects, applied non-destructively</li>
+          <li>Saving and loading the entire project</li>
+          <li>Exporting individual layers</li>
+          <li>A GUI that tries to stay out of your way</li>
+        </ul>
 
-				<!-- Wrapper -->
-					<section id="wrapper">
-						<header>
-							<div class="inner">
-								<h2 style="text-align: center;">Photo Processor</h2>
-								<p style="text-align: center;">A basic photo processing application that allows users to apply various filters and effects as well as downscale images</p>
-							</div>
-						</header>
+        <h2>What I got out of it</h2>
+        <ul>
+          <li>Designing graphical user interfaces with Java Swing</li>
+          <li>Breaking down complex functionality into well-shaped helpers</li>
+          <li>Building a flexible program that's easy for future developers to extend</li>
+          <li>Collaborating closely with a partner on a shared codebase</li>
+        </ul>
 
-						<!-- Content -->
-							<div class="wrapper">
-								<div class="inner">
-									<ul style="text-align: left;">
-									<h3 class="major" style="text-align: center;">Language: Java</h3>
-									<p>In this project, my partner and I drew inspiration from popular photo processing applications and developed a working photo editor with a GUI. 
-									Some of the features we paid attention to were:</p>
-										<li>Ability to upload various image types (PPM, JPEG, PNG, etc.)</li>
-										<li>Ability to apply filters/effects/downscaling</li>
-										<li>Ability to layer images and effects</li>
-										<li>Ability to save and load the entire project</li>
-										<li>Ability to export individual layers</li>
-										<li>Designing an intuitive and user friendly interface</li>
-										
-										<hr>
-									<p> Through the process of developing this project, some of the concepts and practices I gained experience with were: </p>
-										<li>Designing graphical user interfaces with Java Swing</li>
-										<li>Practice designing appropriate helper functions when executing a complex function</li>
-										<li>Designing a flexible program that easily enables developers to add features in the future</li>
-										<li>Collaborating with a partner to design code for a single project</li>
-										<hr>
-									</ul>
-									<div style="text-align:center">
-										<a href="mailto:bishts.abhay@gmail.com" target="_blank">Code Available Upon Request</a>
-									</div>
-									<div class="inner">
-										<font size="3"><p><i> This project was developed as part of the Northeastern course</i> 
-											<a href="https://www.coursicle.com/neu/courses/CS/3500/" target="_blank">Object Oriented Design</a>. 
-										</p></font>
-									</div>
-									<!--
+        <div class="link-row">
+          <a href="mailto:bishts.abhay@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6.5 9 6.5 9-6.5"/></svg>
+            Code available upon request
+          </a>
+        </div>
 
-									<h3 class="major">Vitae phasellus</h3>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-									-->
-								<!--
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-									</section>
-								-->
+        <div class="callout">
+          Built as part of Northeastern's
+          <a href="https://www.coursicle.com/neu/courses/CS/3500/" target="_blank" rel="noopener">Object Oriented Design</a>
+          course.
+        </div>
+      </article>
+    </main>
 
-								</div>
-							</div>
-							<div class="inner">
-							<h2 style="text-align: center;"><font size="5">Contact Me</font></h2>
-							<style>
-								ul {
-									text-align: center;
-								}
-							</style>
-							<ul class="icons">
-							<font size="6">
-								<li><a href="https://www.linkedin.com/in/abhaybisht/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:bishts.abhay@gmail.com" class="icon solid fa-envelope"><span class="label">Mail</span></a></li>
-								<li><a href="https://github.com/AbhayBishts" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								-->
-							</font>
-							</ul>
-							<!--
-							<ul class="copyright">
-								<p>&copy; Abhay Bisht. All rights reserved.</p>
-							</ul>
-							-->
-						</div>
+    <footer class="site-footer">
+      <div class="container" style="display: flex; justify-content: space-between; width: 100%; flex-wrap: wrap; gap: 0.5rem;">
+        <span>© <span data-current-year>2026</span> Abhay Bisht</span>
+        <span><a href="index.html">Back to home</a></span>
+      </div>
+    </footer>
 
-					</section>
-
-				<!-- Footer -->
-				<!--
-					<section id="footer">
-						<div class="inner">
-						 	<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-							</ul> 
-							<style>
-								h2 {text-align: center;}
-							</style>
-							<h2><font size="6">Contact Me</font></h2>
-							<style>
-								ul {
-									text-align: center;
-								}
-							</style>
-							<ul class="icons">
-							<font size="5">
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							</font>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Abhay Bisht. All rights reserved.</li>
-							</ul>
-						</div>
-					</section>
-					-->
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

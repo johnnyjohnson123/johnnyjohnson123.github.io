@@ -1,194 +1,93 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Abhay Bisht</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Countdown — Abhay Bisht</title>
+    <meta name="description" content="A tiny Python utility that counts down days, hours, and minutes to any event." />
+    <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="brand">abhay<span class="dot">.</span></a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html#about" class="nav-hide-sm">About</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#contact" class="nav-hide-sm">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Abhay Bisht</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+    <main id="main">
+      <section class="project-header container">
+        <a href="index.html#projects" class="back-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="19" y1="12" x2="5" y2="12" />
+            <polyline points="12 19 5 12 12 5" />
+          </svg>
+          All projects
+        </a>
+        <h1>Countdown</h1>
+        <p class="lede">
+          A tiny Python utility that tells you exactly how long is left until
+          any event you care about — days, hours, or minutes.
+        </p>
+        <div class="project-meta">
+          <span>Python</span>
+          <span>CLI</span>
+          <span>First Python project</span>
+        </div>
+      </section>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="coveytown.html">TricKey Typing</a></li>
-								<!-- <li><a href="freetime.html">FreeTimeCalendar</a></li> -->
-								<li><a href="photoprocessor.html">Photoprocessor</a></li>
-								<li><a href="freecell.html">FreeCell</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+      <article class="container prose">
+        <p>
+          My first real Python project. I kept finding myself wanting to know
+          exactly how long I had until some upcoming event, so I built a little
+          CLI that does just that. A few details I paid attention to:
+        </p>
+        <ul>
+          <li>Attach a custom time and name to the event</li>
+          <li>Reject <code>00:00</code> as a custom time</li>
+          <li>Leave both the time and name fields optional</li>
+          <li>Let the user confirm their inputs before locking them in</li>
+          <li>Restart the program with a fresh date at the end</li>
+          <li>Use different wording for dates in the past</li>
+        </ul>
 
-				<!-- Wrapper -->
-					<section id="wrapper">
-						<header>
-							<div class="inner">
-								<h2 style="text-align: center;">Countdown</h2>
-								<p style="text-align: center;">A simple countdown program that tells you the number of days, hours, and minutes until a certain date</p>
-							</div>
-						</header>
+        <div class="link-row">
+          <a href="https://github.com/AbhayBishts/countdown" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.58.11.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.27-5.24-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18.92-.25 1.9-.38 2.88-.39.98.01 1.96.13 2.88.39 2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.7 5.38-5.26 5.66.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56C20.22 21.37 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+            Source on GitHub
+          </a>
+        </div>
 
-						<!-- Content -->
-							<div class="wrapper">
-								<div class="inner">
-									<ul style="text-align: left;">
-									<h3 class="major" style="text-align: center;">My First Python Project</h3>
-									<p>For my first Python* project, I decided to create a simple program that executes a fairly essential function in my life: telling me the amount of time until a particular event in the future, which allows me to countdown the days, hours, and even minutes! Some of the smaller details I paid attention to were: </p>
-										<li>Ability to assign a custom time and name to the event</li>
-										<li>Making sure that a custom time of 00:00 would not be accepted</li>
-										<li>Making sure the time and name fields were optional</li>
-										<li>Allowing users to confirm their inputs</li>
-										<li>Ability to restart the program with a new date at the end</li>
-										<li>Different wording for dates in the past</li>
-										<br/>
-									</ul>
-									<div style="text-align:center">
-										<a href="https://github.com/AbhayBishts/countdown" target="_blank">Check out this project here!</a>
-									</div>
-									<div class="inner">
-										<font size="3"><p><i> *This project was developed after learning to code in Python through a Udemy course linked 
-											<a href="https://www.udemy.com/course/complete-python-bootcamp/" target="_blank">here</a>. 
-										</i></p></font>
-									</div>
-									<!--
-									<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
+        <div class="callout">
+          Built after picking up Python through
+          <a href="https://www.udemy.com/course/complete-python-bootcamp/" target="_blank" rel="noopener">this Udemy course</a>.
+        </div>
+      </article>
+    </main>
 
-									<h3 class="major">Vitae phasellus</h3>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-									-->
-								<!--
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-									</section>
-								-->
+    <footer class="site-footer">
+      <div class="container" style="display: flex; justify-content: space-between; width: 100%; flex-wrap: wrap; gap: 0.5rem;">
+        <span>© <span data-current-year>2026</span> Abhay Bisht</span>
+        <span><a href="index.html">Back to home</a></span>
+      </div>
+    </footer>
 
-								</div>
-							</div>
-							<div class="inner">
-							<h2 style="text-align: center;"><font size="5">Contact Me</font></h2>
-							<style>
-								ul {
-									text-align: center;
-								}
-							</style>
-							<ul class="icons">
-							<font size="6">
-								<li><a href="https://www.linkedin.com/in/abhaybisht/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:bishts.abhay@gmail.com" class="icon solid fa-envelope"><span class="label">Mail</span></a></li>
-								<li><a href="https://github.com/AbhayBishts" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								-->
-							</font>
-							</ul>
-							<!--
-							<ul class="copyright">
-								<p>&copy; Abhay Bisht. All rights reserved.</p>
-							</ul>
-							-->
-						</div>
-
-					</section>
-
-				<!-- Footer -->
-				<!--
-					<section id="footer">
-						<div class="inner">
-						 	<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-							</ul> 
-							<style>
-								h2 {text-align: center;}
-							</style>
-							<h2><font size="6">Contact Me</font></h2>
-							<style>
-								ul {
-									text-align: center;
-								}
-							</style>
-							<ul class="icons">
-							<font size="5">
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							</font>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Abhay Bisht. All rights reserved.</li>
-							</ul>
-						</div>
-					</section>
-					-->
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
