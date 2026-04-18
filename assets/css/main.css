@@ -790,6 +790,27 @@ main {
     font-size: 2rem;
   }
 
+  .section {
+    padding: 2.25rem 0;
+  }
+
+  .section > h2 {
+    margin-bottom: 1.25rem;
+  }
+
+  .timeline {
+    gap: 1.75rem;
+  }
+
+  .project-header {
+    padding: 2.5rem 0 1.5rem;
+  }
+
+  .footer-meta {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
   .site-nav a {
     padding: 0.5rem 0.5rem;
   }
