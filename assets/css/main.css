@@ -783,7 +783,7 @@ main {
 
 @media (max-width: 640px) {
   .hero {
-    padding: 3rem 0 2.5rem;
+    padding: 3rem 0 3.5rem;
   }
 
   h1 {
@@ -791,12 +791,12 @@ main {
   }
 
   .section {
-    padding: 3rem 0;
+    padding: 4.5rem 0 3.5rem;
   }
 
   .section > h2 {
-    margin-top: 0.25rem;
-    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
   }
 
   .timeline {
@@ -804,7 +804,7 @@ main {
   }
 
   .project-header {
-    padding: 2.5rem 0 1.5rem;
+    padding: 3.5rem 0 1.5rem;
   }
 
   .footer-meta {
