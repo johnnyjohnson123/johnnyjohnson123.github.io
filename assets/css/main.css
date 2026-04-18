@@ -783,7 +783,7 @@ main {
 
 @media (max-width: 640px) {
   .hero {
-    padding: 3rem 0 2rem;
+    padding: 3rem 0 2.5rem;
   }
 
   h1 {
@@ -791,11 +791,12 @@ main {
   }
 
   .section {
-    padding: 2.25rem 0;
+    padding: 3rem 0;
   }
 
   .section > h2 {
-    margin-bottom: 1.25rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
   }
 
   .timeline {
